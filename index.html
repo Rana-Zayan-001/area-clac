@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form onsubmit="calcBMI(); return false;">
+    <div><label for="base">What is base of triangel:</label></div>
+    <div><input type="number" id="base" /></div>
+
+    <div><label for="height">what is height of triangel</label></div>
+     <div><input type="number" id="height"  /></div>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calcBMI() {
+      const baseInput = document.getElementById("base");
+      const heightInput = document.getElementById("height");
+      
+      const base = Number(baseInput.value);
+      const height = Number(heightInput.value);
+      const resultDiv = document.getElementById("result");
+
+     
+
+      const area= (1/2*base*height);
+      
+      
+      
+    
+      
+      
+      
+
+      resultDiv.textContent = area;
+    }
+  </script>
+</body>
+</html>
